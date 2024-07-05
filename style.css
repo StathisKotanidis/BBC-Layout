@@ -236,6 +236,12 @@ nav {
 }
 
 /* navbar styling ends here*/
+main {
+  display: flex;
+  flex-direction: column;
+  height: 55vh;
+  width: 100%;
+}
 
 .top-main-section {
   height: 5vh;
@@ -247,9 +253,36 @@ nav {
 .top-main-section > h1 {
   font-size: 1.6em;
   color: rgb(49, 41, 38);
+  padding-left: 5px;
 }
 
 .top-main-section > span {
   color: rgba(134, 133, 133, 0.774);
   font-size: 1.5em;
+}
+
+.bottom-main-section {
+  height: 50vh;
+  margin: 7px;
+  display: flex;
+}
+
+.main-article {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  border: 1px solid green;
+}
+
+.main-article img {
+  width: 100%;
+  height: 100%;
+}
+
+/* .main-article h3 {
+} */
+
+.rest-of-the-articles {
+  width: 50%;
+  border: 1px solid purple;
 }
