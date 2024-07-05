@@ -140,15 +140,51 @@ nav {
   height: 100%;
   width: 100%;
   display: flex;
-  background-color: white;
-  color: white;
+  background-color: black;
 }
 
 .left-nav-section,
 .right-nav-section {
   display: flex;
   width: 20%;
-  border: 1px solid black;
+  border: 1px solid grey;
+}
+
+.left-nav-section {
+  display: flex;
+}
+
+.left-nav-section > span {
+  flex-grow: 2;
+  justify-content: flex-start;
+  padding-left: 25px;
+}
+
+.left-nav-section > img {
+  flex-grow: 1;
+  object-fit: fill;
+  padding: 10px 30px 10px 10px;
+  border: 1px solid grey;
+}
+
+.left-nav-section a,
+.middle-nav-section > ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+.fa-circle-user {
+  font-size: 25px;
+  padding-right: 10px;
+}
+
+.left-nav-section > span,
+.middle-nav-section > ul li {
+  border: 1px solid grey;
+  font-weight: bold;
+  font-size: 0.9em;
+  display: flex;
+  align-items: center;
 }
 
 .middle-nav-section {
@@ -161,17 +197,11 @@ nav {
   display: flex;
   width: 100%;
   justify-content: space-between;
-  background-color: black;
 }
 
 .middle-nav-section > ul li {
-  border: 1px solid grey;
-  font-weight: bold;
-  font-size: 0.9em;
   flex-grow: 1;
-  display: flex;
   justify-content: center;
-  align-items: center;
 }
 
 .middle-nav-section > ul li:last-child {
@@ -179,7 +209,47 @@ nav {
   justify-content: space-around;
 }
 
-.middle-nav-section > ul li a {
-  text-decoration: none;
-  color: white;
+.right-nav-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid grey;
+}
+
+.right-nav-section > .input-container {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.input-container input {
+  width: 60%;
+}
+
+.input-container .fa-magnifying-glass {
+  position: absolute;
+  top: 50%;
+  left: 270px;
+  transform: translateY(-50%);
+}
+
+/* navbar styling ends here*/
+
+.top-main-section {
+  height: 5vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+}
+
+.top-main-section > h1 {
+  font-size: 1.6em;
+  color: rgb(49, 41, 38);
+}
+
+.top-main-section > span {
+  color: rgba(134, 133, 133, 0.774);
+  font-size: 1.5em;
 }
