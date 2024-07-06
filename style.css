@@ -323,13 +323,99 @@ main {
   font-weight: bold;
 }
 
+/* left section of main styling ends here */
+
 .rest-of-the-articles {
   width: 50%;
   border: 1px solid purple;
+  display: flex;
+}
+
+.first-column,
+.second-column {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.first-column article,
+.second-column article {
+  height: 50%;
+  border: 1px solid blue;
+  overflow: hidden;
+}
+
+.first-column article:first-of-type,
+.second-column article:first-of-type {
+  margin: 0 0 10px 20px;
+  position: relative;
+}
+
+.first-column article:last-of-type,
+.second-column article:last-of-type {
+  margin-left: 20px;
+  position: relative;
+}
+
+.first-column article:first-of-type img,
+.first-column article:last-of-type img {
+  width: 100%;
+  height: 100%;
+}
+
+.first-column article:first-of-type h2,
+.first-column article:first-of-type span,
+.first-column article:last-of-type h2,
+.first-column article:last-of-type span {
+  position: absolute;
+}
+
+.first-column article:first-of-type h2,
+.first-column article:last-of-type h2 {
+  color: white;
+  font-size: 1.4em;
+}
+
+.first-column article:first-of-type span,
+.first-column article:last-of-type span {
+  color: rgba(250, 235, 235, 0.993);
+  font-size: 1.1em;
+}
+
+.first-column article:first-of-type h2 {
+  bottom: 60px;
+  left: 10px;
+}
+
+.first-column article:first-of-type .separator {
+  left: 10px;
+  color: blue;
+}
+
+.first-column article:first-of-type span {
+  bottom: 21px;
+  left: 20px;
+}
+
+.first-column article:last-of-type h2 {
+  bottom: 60px;
+  left: 10px;
+}
+
+.first-column article:last-of-type span {
+  bottom: 15px;
+  left: 25px;
+}
+
+.first-column article:last-of-type .separator {
+  bottom: 15px;
+  left: 10px;
+  color: aqua;
 }
 
 .news-section {
-  /* width: 100%; */
+  width: 100%;
   height: 40vh;
   margin-top: 25px;
   display: flex;
